@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/client/people.png" type="image/icon type">
+    <title>DispApp - Přepravy</title>
+    
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+        <a class="navbar-brand " href="index.html">DispApp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Hlavní menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="zadaniPrepravy.html">Nová přeprava</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="listprepravy.html">Přepravy</a>
+              </li>
+          </ul>
+        </div>
+      </nav>
+    <main>
+        
+        <div>
+            <h1 class="text-center mt-4">Přehled přeprav</h1>
+        </div>
+
+        <table class="table table-striped mt-4 border-top" id="table">
+            <thead>
+                <th scope="col">ID</th>
+                <th scope="col">Objednatelská Firma</th>
+                <th scope="col">Cena</th>
+                <th scope="col">Datum přepravy</th>
+                <th scope="col">SPZ</th>
+                <th scope="col">Firma nakládka</th>
+                <th scope="col">Adresa nakládka</th>
+                <th scope="col">Firma vykládka</th>
+                <th scope="col">Adresa nakládka</th>
+                <th scope="col">Email</th>
+                <th scope="col">Tel</th>
+                <th scope="col">Přidáno</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </thead>
+            <tbody></tbody>
+        </table>
+    
+    
+    
+    
+   
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+        
+                <form action="">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="exampleModalLabel">Aktualizace přepravy</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        
+                        <div class="container-fluid">
+                            <h5 class="mb-2">Obecné informace</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="update-odberatel-input">Odběratel:</label>
+                                    <input type="text" class="form-control mb-2" id="update-odberatel-input">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="update-cena-input">Cena:</label>
+                                    <input type="text" class="form-control mb-2" id="update-cena-input">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="update-datum-input">Datum:</label>
+                                    <div class="input-group date" id="datepicker">
+                                        <input type="text" class="form-control mb-2" id="update-datum-input">
+                                        <span class="input-group-append">
+                                            <span class="input-group-text bg-white d-block">
+                                                <i class="fa fa-calendar"></i>
+                                            </span>
+                                        </span>
+                                    </div>
+                                </div>  
+                                <div class="col-md-6">
+                                    <label for="update-spz-input">SPZ:</label>
+                                    <input type="text" class="form-control mb-2" id="update-spz-input">
+                                </div>
+                            </div>     
+                            <h5 class="mb-2 mt-4">Nakládka</h5>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="update-firmanakl-input">Firma nakládka:</label>
+                                    <input type="text" class="form-control mb-2" id="update-firmanakl-input">
+                                </div>        
+                            </div>     
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="update-adresanakl-input">Adresa nakládka:</label>
+                                    <input type="text" class="form-control mb-2" id="update-adresanakl-input">
+                                </div>        
+                            </div>    
+                            <h5 class="mb-2 mt-4">Vykládka</h5>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="update-firmavykl-input">Firma vykládka:</label>
+                                    <input type="text" class="form-control mb-2" id="update-firmavykl-input">        
+                                </div>        
+                            </div>    
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="update-adresavykl-input">Adresa vykládka:</label>
+                                    <input type="text" class="form-control" id="update-adresavykl-input">        
+                                </div>        
+                            </div>
+                            <h5 class="mb-2 mt-4">Kontakt</h5>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="update-email-input">Email:</label>
+                                    <input type="email" class="form-control" id="update-email-input">
+                                </div>        
+                                <div class="col-md-6">
+                                    <label for="update-tel-input">Telefon:</label>
+                                    <input type="text" class="form-control" id="update-tel-input">
+                                </div>
+                            </div>  
+                        </div>    
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+                        <button type="submit" class="btn btn-primary" id="update-row-btn">Aktualizovat</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        </div>
+
+
+        
+        <a href="index.html" class="btn btn-secondary mt-5 m-2">Přejít zpět na hlavní menu</a>
+    </main>
+
+    <footer class="footer fixed-bottom py-3 bg-dark">
+        <span class="text-muted">DispApp | Autor: Martin Janda | 2022</span>
+    </footer>
+
+    <script src="listprepravy.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
