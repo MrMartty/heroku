@@ -1,8 +1,8 @@
-/*document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     fetch('http://localhost:5000/getAll')
     .then(response => response.json())
     .then(data => loadHTMLTable(data['data']));
-});*/
+});
 
 document.querySelector('table tbody').addEventListener('click', function(event) {
     if (event.target.className === "delete-row-btn") {
