@@ -43,7 +43,7 @@ addBtn.onclick = function () {
     telInput.value = "";
 
 
-    fetch('http://localhost:5000/insert', {
+    fetch('http://localhost:80/insert', {
         headers: {
             'Content-type': 'application/json'
         },
