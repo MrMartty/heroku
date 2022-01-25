@@ -5,6 +5,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const dbService = require('./dbService');
+const res = require('express/lib/response');
 const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
@@ -22,6 +23,10 @@ app.post('/insert', (request, response) => {
     .then(data => response.json({ data: data}))
     .catch(err => console.log(err));
 });
+
+app.get('/', (request, response)=> {
+    response.render(index.html)
+})
 
 // read
 app.get('/getAll', (request, response) => {
