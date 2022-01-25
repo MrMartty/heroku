@@ -1,7 +1,7 @@
 const mysql = require('mysql');
 const dotenv = require('dotenv');
 let instance = null;
-//dotenv.config();
+dotenv.config();
 
 const connection = mysql.createConnection({
     host: 'us-cdbr-east-05.cleardb.net',
