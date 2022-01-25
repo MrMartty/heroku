@@ -1,14 +1,13 @@
 const mysql = require('mysql');
 const dotenv = require('dotenv');
 let instance = null;
-dotenv.config();
+//dotenv.config();
 
 const connection = mysql.createConnection({
-    host: process.env.HOST,
-    user: process.env.USER,
-    password: process.env.PASSWORD,
-    database: process.env.DATABASE,
-    port: process.env.DB_PORT
+    host: 'us-cdbr-east-05.cleardb.net',
+    user: 'b43265298425e5',
+    password: 'b78742de',
+    database: 'heroku_b168bf73817e2a6'
 });
 
 connection.connect((err) => {
