@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     //fetch('http://localhost:'+port+'/getAll')
-    fetch('/getAll')
+    fetch(window.location.hostname+':'+port+'/getAll')
+    //fetch('/getAll')
     .then(response => response.json())
     .then(data => loadHTMLTable(data['data']));
 });

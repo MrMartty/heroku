@@ -24,9 +24,9 @@ app.post('/insert', (request, response) => {
     .catch(err => console.log(err));
 });
 
-app.get('/', (request, response)=> {
+/*app.get('/', (request, response)=> {
     response.render(index.html)
-})
+})*/
 
 // read
 app.get('/getAll', (request, response) => {
