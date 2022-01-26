@@ -61,13 +61,14 @@ app
     .get((request, response) => {
         const db = dbService.getDbServiceInstance();
 
+        response.sendFile(path.join(__dirname+'/listprepravy.html'));
         const result = db.getAllData();
-        
+
         result
         .then(data => response.json({data : data}))
         .catch(err => console.log(err));
 
-    response.sendFile(path.join(__dirname+'/listprepravy.html'));
+    
 });
 
 app.get('/zadaniPrepravy.html', function (request, response) {
