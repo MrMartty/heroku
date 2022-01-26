@@ -41,7 +41,7 @@ app.post('/insert', (request, response) => {
 })*/
 
 app.get('/', function (req, res) {
-    res.render('index.ejs');
+    res.render('index.html');
 })
 
 /*
