@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function () {
+/*document.addEventListener('DOMContentLoaded', function () {
     //fetch('http://localhost:'+port+'/getAll')
     //fetch(window.location.hostname+':'+port+'/getAll')
     fetch(window.location.hostname+':'+port+'/listprepravy.html')
@@ -105,7 +105,7 @@ updateBtn.onclick = function() {
     })
 }*/
 
-
+/*
 
 
 function loadHTMLTable(data) {
@@ -146,5 +146,5 @@ $(function() {
         format: 'yyyy-mm-dd',
     });
 });  
-
+*/
 console.log('vidim ten soubor');
