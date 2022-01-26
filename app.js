@@ -63,10 +63,10 @@ app
 
         response.sendFile(path.join(__dirname+'/listprepravy.html'));
         const result = db.getAllData();
-
-        result
+        console.log(result);
+        /*result
         .then(data => response.json({data : data}))
-        .catch(err => console.log(err));
+        .catch(err => console.log(err));*/
 
     
 });
