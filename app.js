@@ -10,7 +10,7 @@ const dbService = require('./dbService');
 const res = require('express/lib/response');
 const port = process.env.PORT || 5000;
 app.use(favicon(__dirname + '/favicon.png'));
-app.use(Express.static(__dirname));
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended : false }));
