@@ -3,7 +3,8 @@ document.addEventListener('DOMContentLoaded', function () {
     fetch(window.location.hostname+':'+port+'/getAll')
     //fetch('/getAll')
     .then(response => response.json())
-    .then(data => loadHTMLTable(data['data']));
+    //.then(data => loadHTMLTable(data['data']));
+    .then(data => console.log(data));
 });
 
 document.querySelector('table tbody').addEventListener('click', function(event) {
