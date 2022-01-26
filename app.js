@@ -40,8 +40,8 @@ app.post('/insert', (request, response) => {
     .catch(err => console.log(err));
 })*/
 
-app.get('/', function (req, res) {
-    res.send('hello');
+app.get('/', function (request, response) {
+    response.send('hello');
 })
 
 /*
