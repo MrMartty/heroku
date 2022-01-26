@@ -1,5 +1,6 @@
 const express = require('express');
 const favicon = require('express-favicon');
+const path = require('path');
 const app = express();
 const cors = require('cors');
 const dotenv = require('dotenv');
@@ -41,7 +42,7 @@ app.post('/insert', (request, response) => {
 })*/
 
 app.get('/', function (request, response) {
-    response.send('hello');
+    response.sendFile(__dirname, '/index.html');
 })
 
 /*
