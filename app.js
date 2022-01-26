@@ -42,7 +42,7 @@ app.post('/insert', (request, response) => {
 })*/
 
 app.get('/', function (request, response) {
-    response.sendFile(__dirname, 'index.html');
+    response.sendFile(path.join(__dirname+'/index.html'));
 })
 
 /*
