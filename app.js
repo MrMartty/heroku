@@ -30,7 +30,7 @@ app.post('/insert', (request, response) => {
 })*/
 
 // read
-app.get('/getAll', (request, response) => {
+/*app.get('/getAll', (request, response) => {
     const db = dbService.getDbServiceInstance();
 
     const result = db.getAllData();
@@ -38,7 +38,12 @@ app.get('/getAll', (request, response) => {
     result
     .then(data => response.json({data : data}))
     .catch(err => console.log(err));
+})*/
+
+app.get('/', function (req, res) {
+    res.render('index.ejs');
 })
+
 /*
 // update
 app.patch('/update', (request, response) => {
