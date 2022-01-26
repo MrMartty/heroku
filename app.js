@@ -43,37 +43,38 @@ app.post('/insert', (request, response) => {
     .catch(err => console.log(err));
 })*/
 
-app.get('/', function (request, response) {
+/*app.get('/', function (request, response) {
     response.sendFile(path.join(__dirname+'/index.html'));
-})
+})*/
 
-app.get('/index.html', function (request, response) {
+/*app.get('/index.html', function (request, response) {
     response.sendFile(path.join(__dirname+'/index.html'));
-})
+})*/
 
 /*app.get('/listprepravy.html', function (request, response) {
 
     response.sendFile(path.join(__dirname+'/listprepravy.html'));
 })*/
 
-app
+/*app
     .route('/listprepravy.html')
     .get((request, response) => {
         const db = dbService.getDbServiceInstance();
 
         response.sendFile(path.join(__dirname+'/listprepravy.html'));
         const result = db.getAllData();
-        console.log(result);
-        /*result
+        
+        result
         .then(data => response.json({data : data}))
-        .catch(err => console.log(err));*/
-
+        .catch(err => console.log(err));
     
-});
+});*/
 
-app.get('/zadaniPrepravy.html', function (request, response) {
+
+
+/*app.get('/zadaniPrepravy.html', function (request, response) {
     response.sendFile(path.join(__dirname+'/zadaniPrepravy.html'));
-})
+})*/
 
 
 
