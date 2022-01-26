@@ -1,4 +1,4 @@
-/*document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     //fetch('http://localhost:'+port+'/getAll')
     //fetch(window.location.hostname+':'+port+'/getAll')
     fetch(window.location.hostname+':'+port+'/listprepravy.html')
@@ -7,7 +7,7 @@
     //.then(data => loadHTMLTable(data['data']));
     .then(data => console.log(data));
 });
-
+/*
 document.querySelector('table tbody').addEventListener('click', function(event) {
     if (event.target.className === "delete-row-btn") {
         deleteRowById(event.target.dataset.id);
@@ -147,4 +147,3 @@ $(function() {
     });
 });  
 */
-console.log('vidim ten soubor');
