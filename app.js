@@ -65,7 +65,8 @@ app
         const result = db.getAllData();
 
         result
-        .then(data => response.json({data : data}))
+        //.then(data => response.json({data : data}))
+        .then(data => console.log(response.json({data : data})))
         .catch(err => console.log(err));
 
     
