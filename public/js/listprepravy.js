@@ -1,13 +1,7 @@
-const express = require('express');
-
-const app = express();
-const port = process.env.PORT || 5000;
-
-
 document.addEventListener('DOMContentLoaded', function () {
     //fetch('http://localhost:'+port+'/getAll')
     //fetch(window.location.hostname+':'+port+'/getAll')
-    fetch(window.location.hostname+':'+port+'/listprepravy.html')
+    fetch(window.location.hostname+'/listprepravy.html')
     //fetch('/getAll')
     .then(response => response.json())
     //.then(data => loadHTMLTable(data['data']));
