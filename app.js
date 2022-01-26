@@ -59,7 +59,15 @@ app.get('/index.html', function (request, response) {
 app
     .route('/listprepravy.html')
     .get((request, response) => {
-    response.sendFile(path.join(__dirname+'/listprepravy.html'))
+        const db = dbService.getDbServiceInstance();
+
+        const result = db.getAllData();
+        
+        result
+        .then(data => response.json({data : data}))
+        .catch(err => console.log(err));
+
+    response.sendFile(path.join(__dirname+'/listprepravy.html'));
 });
 
 app.get('/zadaniPrepravy.html', function (request, response) {
