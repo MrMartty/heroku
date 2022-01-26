@@ -146,3 +146,5 @@ $(function() {
         format: 'yyyy-mm-dd',
     });
 });  
+
+console.log('vidim ten soubor');
