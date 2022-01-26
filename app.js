@@ -1,4 +1,5 @@
 const express = require('express');
+const favicon = require('express-favicon');
 const app = express();
 const cors = require('cors');
 const dotenv = require('dotenv');
@@ -7,7 +8,7 @@ app.use(cors());
 const dbService = require('./dbService');
 const res = require('express/lib/response');
 const port = process.env.PORT || 5000;
-
+app.use(favicon(__dirname + '/favicon.png'));
 app.use(express.json());
 app.use(express.urlencoded({ extended : false }));
 
