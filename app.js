@@ -45,6 +45,10 @@ app.get('/', function (request, response) {
     response.sendFile(path.join(__dirname+'/index.html'));
 })
 
+app.get('/listprepravy.html', function (request, response) {
+    response.sendFile(path.join(__dirname+'/listprepravy.html'));
+})
+
 /*
 // update
 app.patch('/update', (request, response) => {
