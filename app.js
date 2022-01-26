@@ -45,8 +45,16 @@ app.get('/', function (request, response) {
     response.sendFile(path.join(__dirname+'/index.html'));
 })
 
+app.get('/index.html', function (request, response) {
+    response.sendFile(path.join(__dirname+'/index.html'));
+})
+
 app.get('/listprepravy.html', function (request, response) {
     response.sendFile(path.join(__dirname+'/listprepravy.html'));
+})
+
+app.get('/zadaniPrepravy.html', function (request, response) {
+    response.sendFile(path.join(__dirname+'/zadaniPrepravy.html'));
 })
 
 /*
