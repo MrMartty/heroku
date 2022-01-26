@@ -20,7 +20,7 @@ document.querySelector('table tbody').addEventListener('click', function(event) 
 const updateBtn = document.querySelector('#update-row-btn');
 
 
-function deleteRowById(id) {
+/*function deleteRowById(id) {
     fetch('http://localhost:5000/delete/' + id, {
         method: 'DELETE'
     })
@@ -30,10 +30,10 @@ function deleteRowById(id) {
             location.reload();
         }
     });
-}
+}*/
 
 
-
+/*
 
 
 function handleEditRow(id, odberatel, cena, datum, spz, firmanakl, adresanakl, firmavykl, adresavykl, email, tel) {
@@ -101,7 +101,7 @@ updateBtn.onclick = function() {
             location.reload();
         }
     })
-}
+}*/
 
 
 

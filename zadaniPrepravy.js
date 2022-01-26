@@ -1,4 +1,4 @@
-
+/*
 const addBtn = document.querySelector('#add-name-btn');
 
 addBtn.onclick = function () {
@@ -98,4 +98,4 @@ $(function() {
     $('#datepicker').datepicker({
         format: 'yyyy-mm-dd',
     });
-});  
+});  */

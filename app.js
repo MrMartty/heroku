@@ -5,14 +5,14 @@ const dotenv = require('dotenv');
 dotenv.config();
 app.use(cors());
 const dbService = require('./dbService');
-//const res = require('express/lib/response');
+const res = require('express/lib/response');
 const port = process.env.PORT || 5000;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended : false }));
 
 
-// create
+/*// create
 app.post('/insert', (request, response) => {
     const { odberatel, cena, datum, spz, firma_nakl, adresa_nakl, firma_vykl, adresa_vykl, email, tel } = request.body;    
     const db = dbService.getDbServiceInstance();
@@ -22,7 +22,7 @@ app.post('/insert', (request, response) => {
     result
     .then(data => response.json({ data: data}))
     .catch(err => console.log(err));
-});
+});*/
 
 /*app.get('/', (request, response)=> {
     response.render(index.html)
@@ -38,7 +38,7 @@ app.get('/getAll', (request, response) => {
     .then(data => response.json({data : data}))
     .catch(err => console.log(err));
 })
-
+/*
 // update
 app.patch('/update', (request, response) => {
     const { id, odberatel, cena, datum, spz, firmanakl, adresanakl, firmavykl, adresavykl, email, tel } = request.body;
@@ -61,7 +61,7 @@ app.delete('/delete/:id', (request, response) => {
     result
     .then(data => response.json({success : data}))
     .catch(err => console.log(err));
-});
+});*/
 
 
 
