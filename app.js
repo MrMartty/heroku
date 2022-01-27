@@ -9,7 +9,7 @@ app.use(cors());
 const dbService = require('./dbService');
 const res = require('express/lib/response');
 const port = process.env.PORT || 5000;
-app.use(favicon(__dirname + '/favicon.png'));
+//app.use(favicon(__dirname + '/public/images/favicon.png'));
 app.use(express.static('public'));
 
 app.use(express.json());
