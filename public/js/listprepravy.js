@@ -4,8 +4,8 @@ document.addEventListener('DOMContentLoaded', function () {
     //fetch('listprepravy.html')
     fetch('/getAll')
     .then(response => response.json())
-    //.then(data => loadHTMLTable(data['data']));
-    .then(data => console.log(data));
+    .then(data => loadHTMLTable(data['data']));
+    //.then(data => console.log(data));
 });
 
 /*async function getDataDb(){
