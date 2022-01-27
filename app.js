@@ -43,9 +43,9 @@ app.post('/insert', (request, response) => {
     .catch(err => console.log(err));
 })*/
 
-/*app.get('/', function (request, response) {
+app.get('/', function (request, response) {
     response.sendFile(path.join(__dirname+'/index.html'));
-})*/
+})
 
 /*app.get('/index.html', function (request, response) {
     response.sendFile(path.join(__dirname+'/index.html'));
