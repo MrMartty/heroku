@@ -114,7 +114,7 @@ updateBtn.onclick = function() {
     })
 }*/
 
-/*
+
 
 
 function loadHTMLTable(data) {
@@ -155,4 +155,4 @@ $(function() {
         format: 'yyyy-mm-dd',
     });
 });  
-*/
+
