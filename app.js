@@ -51,7 +51,7 @@ app.get('/', function (request, response) {
     response.sendFile(path.join(__dirname+'/index.html'));
 })*/
 
-app.get('/prepravy', function (request, response) {
+app.get('/listprepravy', function (request, response) {
 
     response.sendFile(path.join(__dirname+'/listprepravy.html'));
 })
@@ -72,7 +72,7 @@ app.get('/prepravy', function (request, response) {
 
 
 
-app.get('/zadaniPrepravy.html', function (request, response) {
+app.get('/zadaniPrepravy', function (request, response) {
     response.sendFile(path.join(__dirname+'/zadaniPrepravy.html'));
 })
 
