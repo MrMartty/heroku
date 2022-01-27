@@ -88,7 +88,7 @@ updateBtn.onclick = function() {
     
 
     fetch('/update', {
-        method: 'PATCH',
+        method: 'POST',
         headers: {
             'Content-type' : 'application/json'
         },

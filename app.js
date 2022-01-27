@@ -80,7 +80,7 @@ app.get('/', function (request, response) {
 
 
 // update
-app.patch('/update', (request, response) => {
+app.put('/update', (request, response) => {
     const { id, odberatel, cena, datum, spz, firmanakl, adresanakl, firmavykl, adresavykl, email, tel } = request.body;
     const db = dbService.getDbServiceInstance();
 
