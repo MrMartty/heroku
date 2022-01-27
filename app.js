@@ -51,10 +51,10 @@ app.get('/', function (request, response) {
     response.sendFile(path.join(__dirname+'/index.html'));
 })*/
 
-/*app.get('/listprepravy.html', function (request, response) {
+app.get('/listprepravy.html', function (request, response) {
 
     response.sendFile(path.join(__dirname+'/listprepravy.html'));
-})*/
+})
 
 /*app
     .route('/listprepravy.html')
@@ -72,9 +72,9 @@ app.get('/', function (request, response) {
 
 
 
-/*app.get('/zadaniPrepravy.html', function (request, response) {
+app.get('/zadaniPrepravy.html', function (request, response) {
     response.sendFile(path.join(__dirname+'/zadaniPrepravy.html'));
-})*/
+})
 
 
 
