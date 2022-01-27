@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended : false }));
 
 
-/*// create
+// create
 app.post('/insert', (request, response) => {
     const { odberatel, cena, datum, spz, firma_nakl, adresa_nakl, firma_vykl, adresa_vykl, email, tel } = request.body;    
     const db = dbService.getDbServiceInstance();
@@ -26,7 +26,7 @@ app.post('/insert', (request, response) => {
     result
     .then(data => response.json({ data: data}))
     .catch(err => console.log(err));
-});*/
+});
 
 /*app.get('/', (request, response)=> {
     response.render(index.html)

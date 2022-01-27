@@ -1,4 +1,4 @@
-/*
+
 const addBtn = document.querySelector('#add-name-btn');
 
 addBtn.onclick = function () {
@@ -43,7 +43,7 @@ addBtn.onclick = function () {
     telInput.value = "";
 
 
-    fetch('http://localhost:5000/insert', {
+    fetch('/insert', {
         headers: {
             'Content-type': 'application/json'
         },
@@ -98,4 +98,4 @@ $(function() {
     $('#datepicker').datepicker({
         format: 'yyyy-mm-dd',
     });
-});  */
+});  
