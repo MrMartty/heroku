@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
 const api_url = 'https://infinite-savannah-03554.herokuapp.com/listprepravy.html';
 getDataDb();*/
 
-/*
+
 document.querySelector('table tbody').addEventListener('click', function(event) {
     if (event.target.className === "delete-row-btn") {
         deleteRowById(event.target.dataset.id);
@@ -31,8 +31,8 @@ document.querySelector('table tbody').addEventListener('click', function(event) 
 const updateBtn = document.querySelector('#update-row-btn');
 
 
-/*function deleteRowById(id) {
-    fetch('http://localhost:5000/delete/' + id, {
+function deleteRowById(id) {
+    fetch('/delete/' + id, {
         method: 'DELETE'
     })
     .then(response => response.json())
@@ -41,10 +41,10 @@ const updateBtn = document.querySelector('#update-row-btn');
             location.reload();
         }
     });
-}*/
+}
 
 
-/*
+
 
 
 function handleEditRow(id, odberatel, cena, datum, spz, firmanakl, adresanakl, firmavykl, adresavykl, email, tel) {
@@ -87,7 +87,7 @@ updateBtn.onclick = function() {
     const updateTelInput = document.querySelector('#update-tel-input');
     
 
-    fetch('http://localhost:5000/update', {
+    fetch('/update', {
         method: 'PATCH',
         headers: {
             'Content-type' : 'application/json'
@@ -112,7 +112,7 @@ updateBtn.onclick = function() {
             location.reload();
         }
     })
-}*/
+}
 
 
 

@@ -78,7 +78,7 @@ app.get('/', function (request, response) {
 
 
 
-/*
+
 // update
 app.patch('/update', (request, response) => {
     const { id, odberatel, cena, datum, spz, firmanakl, adresanakl, firmavykl, adresavykl, email, tel } = request.body;
@@ -101,7 +101,7 @@ app.delete('/delete/:id', (request, response) => {
     result
     .then(data => response.json({success : data}))
     .catch(err => console.log(err));
-});*/
+});
 
 
 
