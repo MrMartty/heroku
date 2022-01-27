@@ -33,7 +33,7 @@ app.post('/insert', (request, response) => {
 })*/
 
 // read
-/*app.get('/getAll', (request, response) => {
+app.get('/getAll', (request, response) => {
     const db = dbService.getDbServiceInstance();
 
     const result = db.getAllData();
@@ -41,7 +41,7 @@ app.post('/insert', (request, response) => {
     result
     .then(data => response.json({data : data}))
     .catch(err => console.log(err));
-})*/
+})
 
 app.get('/', function (request, response) {
     response.sendFile(path.join(__dirname+'/index.html'));

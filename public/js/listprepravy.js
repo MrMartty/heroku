@@ -1,20 +1,20 @@
-/*document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', function () {
     //fetch('http://localhost:'+port+'/getAll')
     //fetch(window.location.hostname+':'+port+'/getAll')
-    fetch('listprepravy.html')
-    //fetch('/getAll')
+    //fetch('listprepravy.html')
+    fetch('/getAll')
     .then(response => response.json())
     //.then(data => loadHTMLTable(data['data']));
     .then(data => console.log(data));
-});*/
+});
 
-async function getDataDb(){
+/*async function getDataDb(){
     const response = await fetch(api_url);
     const data = await response.json();
     console.log(data);
 }
 const api_url = 'https://infinite-savannah-03554.herokuapp.com/listprepravy.html';
-getDataDb();
+getDataDb();*/
 
 /*
 document.querySelector('table tbody').addEventListener('click', function(event) {
