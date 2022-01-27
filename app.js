@@ -10,7 +10,7 @@ const dbService = require('./dbService');
 const res = require('express/lib/response');
 const port = process.env.PORT || 5000;
 //app.use(favicon(__dirname + '/public/images/favicon.png'));
-app.use(express.static('public'));
+app.use(express.static('public', {  extensions: ['html']}));
 
 app.use(express.json());
 app.use(express.urlencoded({ extended : false }));
@@ -51,7 +51,7 @@ app.get('/', function (request, response) {
     response.sendFile(path.join(__dirname+'/index.html'));
 })*/
 
-app.get('/prepravy', function (request, response) {
+app.get('/listprepravy.html', function (request, response) {
 
     response.sendFile(path.join(__dirname+'/listprepravy.html'));
 })
