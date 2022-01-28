@@ -3,19 +3,26 @@ const dotenv = require('dotenv');
 let instance = null;
 dotenv.config();
 
-const connection = mysql.createConnection({
+const connection = mysql.createPool({
     host: 'us-cdbr-east-05.cleardb.net',
     user: 'b43265298425e5',
     password: 'b78742de',
     database: 'heroku_b168bf73817e2a6'
 });
 
-connection.connect((err) => {
+/*const connection = mysql.createConnection({
+    host: 'us-cdbr-east-05.cleardb.net',
+    user: 'b43265298425e5',
+    password: 'b78742de',
+    database: 'heroku_b168bf73817e2a6'
+});*/
+
+/*connection.connect((err) => {
     if (err) {
         console.log(err.message);
     }
      console.log('db ' + connection.state);
-});
+});*/
 
 
 class DbService {
