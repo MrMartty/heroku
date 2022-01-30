@@ -6,6 +6,11 @@ body {
   margin-bottom: 50px;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 .navbar-brand{
     margin-left: 20px;
     
