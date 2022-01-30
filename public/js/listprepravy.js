@@ -133,7 +133,7 @@ function loadHTMLTable(data) {
         //tableHtml += `<td>${id}</td>`;
         tableHtml += `<td>${odberatel}</td>`;
         tableHtml += `<td>${cena}</td>`;
-        tableHtml += `<td>${datum.toISOString().substring(0, 10)}</td>`;
+        tableHtml += `<td>${datum.substring(0, 10)}</td>`;
         tableHtml += `<td>${spz}</td>`;
         tableHtml += `<td>${firma_nakl}</td>`;
         tableHtml += `<td>${adresa_nakl}</td>`;
