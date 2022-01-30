@@ -107,11 +107,11 @@ updateBtn.onclick = function() {
         })
     })
     .then(response => response.json())
-    .then(data => {
+    /*.then(data => {
         if (data.success) {
             location.reload();
         }
-    })
+    })*/
 }
 
 
