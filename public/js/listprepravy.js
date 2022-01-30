@@ -130,7 +130,7 @@ function loadHTMLTable(data) {
 
     data.forEach(function ({id, odberatel, cena, datum, spz, firma_nakl, adresa_nakl, firma_vykl, adresa_vykl, email, tel, date_added}) {
         tableHtml += "<tr>";
-        tableHtml += `<td>${id}</td>`;
+        //tableHtml += `<td>${id}</td>`;
         tableHtml += `<td>${odberatel}</td>`;
         tableHtml += `<td>${cena}</td>`;
         tableHtml += `<td>${datum}</td>`;
