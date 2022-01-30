@@ -51,10 +51,11 @@ app.get('/', function (request, response) {
     response.sendFile(path.join(__dirname+'/index.html'));
 })*/
 
+/*toto
 app.get('/listprepravy', function (request, response) {
 
     response.sendFile(path.join(__dirname+'/listprepravy.html'));
-})
+})*/
 
 /*app
     .route('/listprepravy.html')
@@ -71,10 +72,10 @@ app.get('/listprepravy', function (request, response) {
 });*/
 
 
-
-app.get('/zadaniPrepravy', function (request, response) {
+//toto
+/*app.get('/zadaniPrepravy', function (request, response) {
     response.sendFile(path.join(__dirname+'/zadaniPrepravy.html'));
-})
+})*/
 
 
 
