@@ -63,7 +63,7 @@ function handleEditRow(id, odberatel, cena, datum, spz, firmanakl, adresanakl, f
     
     document.querySelector('#update-odberatel-input').defaultValue = odberatel;
     document.querySelector('#update-cena-input').defaultValue = cena;
-    document.querySelector('#update-datum-input').defaultValue.substring(0, 10) = datum;
+    document.querySelector('#update-datum-input').substring(0, 10).defaultValue = datum;
     document.querySelector('#update-spz-input').defaultValue = spz;
     document.querySelector('#update-firmanakl-input').defaultValue = firmanakl;
     document.querySelector('#update-adresanakl-input').defaultValue = adresanakl;
