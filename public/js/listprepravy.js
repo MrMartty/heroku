@@ -22,7 +22,8 @@ document.querySelector('table tbody').addEventListener('click', function(event) 
         deleteRowById(event.target.dataset.id);
     }
     if (event.target.className === "edit-row-btn") {
-        handleEditRow(event.target.dataset.id, event.target.dataset.odberatel, event.target.dataset.cena, event.target.dataset.datum, event.target.dataset.spz, event.target.dataset.firmanakl, event.target.dataset.adresanakl, event.target.dataset.firmavykl, event.target.dataset.adresavykl, event.target.dataset.email, event.target.dataset.tel);
+        //handleEditRow(event.target.dataset.id, event.target.dataset.odberatel, event.target.dataset.cena, event.target.dataset.datum, event.target.dataset.spz, event.target.dataset.firmanakl, event.target.dataset.adresanakl, event.target.dataset.firmavykl, event.target.dataset.adresavykl, event.target.dataset.email, event.target.dataset.tel);
+        handleEditRow(event.target.dataset.id, data.odberatel, data.cena, data.datum, data.spz, data.firmanakl, data.adresanakl, data.firmavykl, data.adresavykl, data.email, data.tel);
     }
 });
 
